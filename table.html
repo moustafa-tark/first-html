@@ -1,0 +1,109 @@
+<html>
+<head> Computer architecture<head>
+<body bgcolor="fabde7">
+<ol>
+<hr/>
+<li><a href="table.html"> table </a></li>
+<hr/> 
+<li><a href="Subject.html"> Subject </a></li>
+<hr/>
+<li><a href="computeruse.html"> computer uses</a></li>
+<hr/>
+<li><a href="images.html"> images </a></li>
+<hr/>
+</ol>
+
+<font color="#ff0000" size ="7"><b>Single Instruction, Single Data Stream:</b></font> <br/>
+<br/>
+The SISD class of processor architecture includes most commonly available computers. These processors are 
+known as uniprocessors and can be found in millions of embedded processors in video games and home appliances 
+as well as stand?alone processors in home computers, engineering workstations, and mainframe computers.<br/>
+ Although a programmer may not realize the inherent parallelism within these processors, a good deal of concurrency can be present.<br/>
+ Pipelining is a powerful technique that is used in almost all current processor implementations.<br/>
+ Other techniques aggressively exploit parallelism in executing code whether it is declared statically or
+ determined dynamically from an analysis of the code stream.<br/>
+
+During execution, a SISD processor executes one or more operations per clock cycle from the instruction stream.<br/>
+ An instruction is a container that represents the smallest execution packet managed explicitly by the processor.<br/>
+ One or more operations are contained within an instruction. The distinction between instructions and operations is
+ crucial to distinguish between processor behaviors.<br/>
+ Scalar and superscalar processors consume one or more instructions per cycle where each instruction contains a single operation.<br/>
+
+<b/> VLIW processors, on the other hand, consume a single instruction per cycle where this instruction contains multiple operations.<br/>
+
+A SISD processor has four primary characteristics.<br/>
+ The first characteristic is whether the processor is capable of executing multiple operations concurrently.<br/>
+<br/> The second characteristic is the mechanisms by which operations are scheduled for execution—statically at compile time, dynamically at execution, or possibly
+ both.<br/>
+ The third characteristic is the order that operations are issued and retired relative to the original program order—these operations can be in order or out of order.
+<br/> The fourth characteristic is the manner in which exceptions are handled by the processor—precise, imprecise, or a combination.
+<br/> This last condition is not of immediate concern 
+to the applications programmer, although it is certainly important to the compiler writer or operating system programmer
+who must be able to properly handle exception conditions.<br/>
+Most processors implement precise exceptions,<br/>
+although a few high?performance architectures allow imprecise floating?point exceptions.<br/><br/><hr/>
+<font color="#dc143c" size="6"><b>Tables 1 describe some representative scalar, processors, superscalar processors, and VLIW processors.<b></font><br/><br/>
+
+<table border="1" width="400">
+<caption> <font face="lol" color="#00ff00" size="5" > <b>######table######</b></font> </caption>
+<tr>
+<td><b>Processor</b></td> 
+<td><b>Year of introduction</b></td>
+<td><b>Number of function unit</b></td>
+<td><b>Issue width</b></td>
+<td><b>Scheduling</b></td>
+</tr>
+<tr>
+<td><b>Intel 8086</b></td> 
+<td><b>1978</b></td>
+<td><b>1</b></td>
+<td><b>1</b></td>
+<td><b>Dynamic</b></td>
+</tr>
+<tr>
+<td><b>Intel 80286</b></td> 
+<td><b>1982</b></td>
+<td><b>1</b></td>
+<td><b>1</b></td>
+<td><b>Dynamic</b></td>
+</tr>
+<tr>
+<td><b>Intel 80486</b></td> 
+<td><b>1989</b></td>
+<td><b>2</b></td>
+<td><b>1</b></td>
+<td><b>Dynamic</b></td>
+</tr>
+<tr>
+<td><b>HP PA?RISC 7000</b></td> 
+<td><b>1991</b></td>
+<td><b>1</b></td>
+<td><b>1</b></td>
+<td><b>Dynamic</b></td>
+</tr>
+<tr>
+<td><b>Sun SPARC</b></td> 
+<td><b>1992</b></td>
+<td><b>1</b></td>
+<td><b>1</b></td>
+<td><b>Dynamic</b></td>
+</tr>
+</table>
+<hr/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
